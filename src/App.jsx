@@ -7,6 +7,8 @@ import Scratch from "./components/Scratch";
 import Meow from "./components/Meow";
 import Pattern from "./components/Pattern";
 import Circles from "./components/Circles";
+import LazyCat from "./components/LazyCat";
+import Footer from "./components/Footer";
 
 function App() {
   const [svgColor, setSvgColor] = useState("#0A382B");
@@ -69,6 +71,8 @@ function App() {
       <Meow svgColor={svgColor} negativeColor={negativeColor} />
       <Pattern svgColor={svgColor} negativeColor={negativeColor} />
       <Circles svgColor={svgColor} negativeColor={negativeColor} />
+      <LazyCat svgColor={svgColor} negativeColor={negativeColor} />
+      <Footer svgColor={svgColor} negativeColor={negativeColor} />
     </div>
   );
 }
