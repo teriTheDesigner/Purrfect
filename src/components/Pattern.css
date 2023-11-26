@@ -1,0 +1,15 @@
+#pattern {
+  display: flex;
+
+  height: 80vh;
+  align-items: center;
+  width: 100vw;
+}
+
+#pattern div {
+  width: 40%;
+}
+
+#pattern svg {
+  height: 100%;
+}

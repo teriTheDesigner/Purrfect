@@ -1,0 +1,11 @@
+#pawsitive {
+  display: flex;
+  justify-content: space-evenly;
+  height: 80vh;
+  align-items: center;
+  width: 100vw;
+}
+
+#pawsitive svg {
+  width: 20%;
+}

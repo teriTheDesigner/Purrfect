@@ -1,0 +1,16 @@
+#scratch {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5rem;
+  align-items: center;
+  width: 100vw;
+}
+
+#scratch svg {
+  width: 15%;
+}
+
+#scratch h2 {
+  max-width: 45%;
+  line-height: 2;
+}
