@@ -1,0 +1,18 @@
+#lazycat {
+  display: flex;
+
+  height: 80vh;
+
+  width: 100vw;
+}
+
+#lazycat svg {
+  align-self: flex-end;
+  margin-left: 5rem;
+  width: 50%;
+}
+
+#lazycat h2 {
+  font-size: 5rem;
+  align-self: center;
+}

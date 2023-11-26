@@ -21,17 +21,55 @@ function Circles({ svgColor, negativeColor }) {
   };
   return (
     <section id="circles" style={{ backgroundColor: negativeColor }}>
-      <svg xmlns="http://www.w3.org/2000/svg">
-        <circle cx="200" cy="200" r="100" fill={svgColor} />
+      <svg
+        id="Layer_1"
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1054 1054"
+      >
+        <circle strokeWidth="0px" fill={svgColor} cx="527" cy="527" r="527" />
       </svg>
-      <svg xmlns="http://www.w3.org/2000/svg">
-        <circle cx="200" cy="200" r="100" fill={lightenColor(svgColor, 20)} />
+      <svg
+        id="Layer_1"
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1054 1054"
+      >
+        <circle
+          strokeWidth="0px"
+          fill={lightenColor(svgColor, 20)}
+          cx="527"
+          cy="527"
+          r="527"
+        />
       </svg>
-      <svg xmlns="http://www.w3.org/2000/svg">
-        <circle cx="200" cy="200" r="100" fill={lightenColor(svgColor, 50)} />
+      <svg
+        id="Layer_1"
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1054 1054"
+      >
+        <circle
+          strokeWidth="0px"
+          fill={lightenColor(svgColor, 50)}
+          cx="527"
+          cy="527"
+          r="527"
+        />
       </svg>
-      <svg xmlns="http://www.w3.org/2000/svg">
-        <circle cx="200" cy="200" r="100" fill={lightenColor(svgColor, 80)} />
+      <svg
+        id="Layer_1"
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1054 1054"
+      >
+        <circle
+          strokeWidth="0px"
+          fill={lightenColor(svgColor, 80)}
+          cx="527"
+          cy="527"
+          r="527"
+        />
       </svg>
     </section>
   );

@@ -1,0 +1,12 @@
+#footer {
+  display: flex;
+  justify-content: flex-end;
+  height: 60vh;
+  align-items: flex-end;
+  width: 100vw;
+}
+
+#footer svg {
+  height: 50%;
+  margin-right: 10%;
+}
