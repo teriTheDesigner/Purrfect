@@ -53,18 +53,24 @@ function App() {
 
   return (
     <div>
-      <section id="header" style={{ backgroundColor: negativeColor }}>
-        <div style={{ color: svgColor }}>
-          <h3>The</h3>
-          <h1>PURRFECT</h1>
-          <h3>Website</h3>
-        </div>
-        <HexColorPicker
-          style={{ height: "60%", width: "25%" }}
-          color={svgColor}
-          onChange={setSvgColor}
-        />
-      </section>
+      <header id="header" style={{ backgroundColor: negativeColor }}>
+        <section className="grid-header">
+          <div className="headline" style={{ color: svgColor }}>
+            <h3 className="h3">The</h3>
+            <h1 className="h1">PURRFECT</h1>
+            <h3 className="h3">Website</h3>
+          </div>
+          <HexColorPicker
+            id="hexColorPicker"
+            style={{
+              height: "100%",
+              width: "100%",
+            }}
+            color={svgColor}
+            onChange={setSvgColor}
+          />
+        </section>
+      </header>
       <SittingCats svgColor={svgColor} negativeColor={negativeColor} />
       <Pawsitive svgColor={svgColor} negativeColor={negativeColor} />
       <Scratch svgColor={svgColor} negativeColor={negativeColor} />

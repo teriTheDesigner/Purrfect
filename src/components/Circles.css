@@ -1,12 +1,59 @@
 #circles {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
   display: flex;
   justify-content: center;
-  height: 80vh;
   align-items: center;
-  width: 100vw;
+}
+
+.grid-circles {
+  display: grid;
+  max-width: 1200px;
+  gap: 1rem;
+  grid-template-columns: repeat(13, 1fr);
 }
 
 #circles svg {
-  width: 30%;
-  height: 30%;
+  width: 100%;
+  height: 100%;
+}
+
+.circle1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.circle2 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+.circle3 {
+  grid-column-start: 8;
+  grid-column-end: 10;
+}
+.circle4 {
+  grid-column-start: 11;
+  grid-column-end: 13;
+}
+
+@media (max-width: 900px) {
+  #circles {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .circle1 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+  }
+  .circle2 {
+    grid-column-start: 8;
+    grid-column-end: 13;
+  }
+  .circle3 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+  }
+  .circle4 {
+    grid-column-start: 8;
+    grid-column-end: 13;
+  }
 }

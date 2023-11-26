@@ -2,11 +2,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  width: 100vw;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
 }
 
 #meow svg {
   width: 70%;
+}
+
+@media (max-width: 900px) {
+  #meow svg {
+    width: 90%;
+  }
+  #meow {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }

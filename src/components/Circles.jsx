@@ -21,56 +21,62 @@ function Circles({ svgColor, negativeColor }) {
   };
   return (
     <section id="circles" style={{ backgroundColor: negativeColor }}>
-      <svg
-        id="Layer_1"
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1054 1054"
-      >
-        <circle strokeWidth="0px" fill={svgColor} cx="527" cy="527" r="527" />
-      </svg>
-      <svg
-        id="Layer_1"
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1054 1054"
-      >
-        <circle
-          strokeWidth="0px"
-          fill={lightenColor(svgColor, 20)}
-          cx="527"
-          cy="527"
-          r="527"
-        />
-      </svg>
-      <svg
-        id="Layer_1"
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1054 1054"
-      >
-        <circle
-          strokeWidth="0px"
-          fill={lightenColor(svgColor, 50)}
-          cx="527"
-          cy="527"
-          r="527"
-        />
-      </svg>
-      <svg
-        id="Layer_1"
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1054 1054"
-      >
-        <circle
-          strokeWidth="0px"
-          fill={lightenColor(svgColor, 80)}
-          cx="527"
-          cy="527"
-          r="527"
-        />
-      </svg>
+      <div className="grid-circles">
+        <svg
+          className="circle1"
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1054 1054"
+        >
+          <circle strokeWidth="0px" fill={svgColor} cx="527" cy="527" r="527" />
+        </svg>
+        <svg
+          className="circle2"
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1054 1054"
+        >
+          <circle
+            strokeWidth="0px"
+            fill={lightenColor(svgColor, 20)}
+            cx="527"
+            cy="527"
+            r="527"
+          />
+        </svg>
+        <svg
+          className="circle3"
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1054 1054"
+        >
+          <circle
+            strokeWidth="0px"
+            fill={lightenColor(svgColor, 50)}
+            cx="527"
+            cy="527"
+            r="527"
+          />
+        </svg>
+        <svg
+          className="circle4"
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1054 1054"
+        >
+          <circle
+            strokeWidth="0px"
+            fill={lightenColor(svgColor, 80)}
+            cx="527"
+            cy="527"
+            r="527"
+          />
+        </svg>
+      </div>
     </section>
   );
 }

@@ -1,15 +1,41 @@
 #pattern {
   display: flex;
-
-  height: 80vh;
-  align-items: center;
-  width: 100vw;
 }
 
-#pattern div {
-  width: 40%;
+.grid-pattern {
+  display: grid;
+  max-width: 1200px;
+  gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
 }
 
-#pattern svg {
+.patternCat {
+  grid-column-start: 1;
+  grid-column-end: 8;
   height: 100%;
+  width: 180%;
+  overflow-x: hidden;
+}
+
+@media (min-width: 1800px) {
+  #pattern {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .patternCat {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    width: 130%;
+  }
+}
+
+@media (max-width: 700px) {
+  .patternCat {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    width: 110%;
+  }
 }

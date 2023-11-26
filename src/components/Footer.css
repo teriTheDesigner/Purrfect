@@ -1,12 +1,73 @@
 #footer {
+  padding-top: 7rem;
   display: flex;
-  justify-content: flex-end;
-  height: 60vh;
-  align-items: flex-end;
-  width: 100vw;
+  justify-content: center;
+  align-items: center;
 }
 
-#footer svg {
-  height: 50%;
-  margin-right: 10%;
+.oneline {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.get-in-touch {
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+.grid-footer {
+  display: grid;
+  max-width: 1200px;
+  gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.catEyes {
+  width: 100%;
+  grid-column-start: 10;
+  grid-column-end: 13;
+  bottom: 0;
+}
+
+@media (max-width: 900px) {
+  #footer {
+    padding-top: 3rem;
+  }
+
+  .get-in-touch {
+    grid-column-start: 3;
+    grid-column-end: 9;
+  }
+  .catEyes {
+    width: 50%;
+    grid-column-start: 7;
+    grid-column-end: 12;
+    margin-top: auto;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact {
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+  .get-in-touch {
+    grid-column-start: 3;
+    grid-column-end: 12;
+  }
 }

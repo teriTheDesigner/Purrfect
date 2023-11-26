@@ -1,11 +1,78 @@
 #pawsitive {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
   display: flex;
-  justify-content: space-evenly;
-  height: 80vh;
+  justify-content: center;
   align-items: center;
-  width: 100vw;
 }
 
-#pawsitive svg {
-  width: 20%;
+.grid-pawsitive {
+  display: grid;
+  max-width: 1200px;
+  gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#h1 {
+  font-size: 7rem;
+  font-weight: 900;
+  margin-block-end: 0em;
+  margin-block-start: 0em;
+}
+
+#h3 {
+  font-size: 4rem;
+  margin-block-end: 0em;
+  margin-block-start: 0em;
+  font-weight: 500;
+}
+
+.text {
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+.paws {
+  grid-column-start: 9;
+  grid-column-end: 12;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  #pawsitive {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .text {
+    grid-column-start: 3;
+    grid-column-end: 11;
+  }
+  #h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+  }
+  .paws {
+    grid-column-start: 5;
+    grid-column-end: 11;
+    width: 100%;
+  }
+
+  #h3 {
+    font-size: 2rem;
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 500px) {
+  #h1 {
+    font-size: 3rem;
+  }
+
+  #h3 {
+    font-size: 2rem;
+  }
 }
