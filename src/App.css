@@ -73,8 +73,7 @@ body {
   #hexColorPicker {
     grid-column-start: 3;
     grid-column-end: 11;
-    height: 100%;
-    width: 100%;
+    min-height: 300px;
   }
 
   .h3 {
@@ -89,5 +88,8 @@ body {
 
   .h3 {
     font-size: 2rem;
+  }
+  #hexColorPicker {
+    min-height: 200px;
   }
 }
